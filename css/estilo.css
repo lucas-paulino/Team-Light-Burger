@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Aller Display';
+    src: url('../fonts/AllerDisplay.ttf');
+}
+
+@font-face {
+    font-family: 'Aller';
+    src: url('../fonts/Aller_Rg.ttf');
+}
+
+h1, h2, h3, h4, h5, h6, li{ font-family: Aller Display; }
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+}
+
+p, label{ font-family: Aller;}
+
+ul{
+	margin: 0px;
+}
+
+#topo{
+	min-height:100vh;
+	padding:1px 0px 40px 0px; 
+	color: #ffffff;
+	background-color: #689838;	
+	background-image: url('../img/topo.png');
+	background-position: center;
+	//background-size: 100%;	
+}
+
+#menu ul li{
+    display: inline-block;
+    padding: 1%;
+    margin: 0.5%;
+    cursor: pointer;
+    transition: .5s;
+}#menu ul li:hover{
+    background-color: #689838;
+}
+
+#mobileMenu li{
+	margin-left: 1rem;
+}
+
+#user{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+#user li{
+    display: inline-block;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: .5s;    
+}#user li:hover{    
+    background-color: #689838;
+}
+
+#iconMobileMenu{
+	margin-top: 1rem;
+	margin-left: 1rem;
+	z-index: 100;
+}
+
+.caixa-auta{ text-transform: uppercase; }
+.centro-texto{ text-align: center; }
+.centro-caixa{ margin: 0px auto ;}
+
+.item{
+	padding: 1rem;
+	border-radius: 10px;
+	transition: .5s;
+}.item:hover{
+	box-shadow: 0px 0px 20px #EED525;
+}
+
+.botaoBranco{
+    padding: 10px;
+    border:4px solid #EED525;
+    color: #EED525;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}.botaoBranco:hover{
+    //box-shadow: 0px 0px 10px #EED525;
+    color: #fff;
+    background-color: #EED525;
+}
+
+.botaoVerde{
+	max-width: 70%;
+	min-width: 60%;
+    margin: 10px auto 0px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.4rem;
+    border:0.4rem solid #689838;
+    background-color: #fff;
+    color: #689838;
+    cursor: pointer;
+    transition: .5s;
+}.botaoVerde:hover{
+	background-color: #689838; 
+    color: #fff;
+}
+
+.amarelo{ color: #EED525; }
+.verde{ color: #689838; }
+.marrom{ color: #592310; }
+.preto{ color: #303030; }
+.branco{ color: #ffffff; }
+
+.espaco-cimaP{ margin-top: 2vh; }
+.espaco-baixoP{ margin-bottom: 2vh; }
+
+.espaco-cimaM{ margin-top: 4vh; }
+.espaco-baixoM{ margin-bottom: 4vh; }
+
+.espaco-cimaG{ margin-top: 6vh; }
+.espaco-baixoG{ margin-bottom: 6vh; }
+
+#redes{
+    position: relative;
+    width: 100%;
+    padding: 2% 0px;
+    background-color: #344F1A;
+    background-image: url('../img/redes.png');
+    background-position: center;
+}
+
+#redes li{
+	margin: 0px 2%; 
+	display: inline-block;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+#pedidos{
+    padding: 2rem;
+}
+
+#pedidos li{
+    display: inline-block;
+}
+
+footer{
+    position: relative;
+    padding: 0.6rem 0px;
+    background-color: #344F1A;
+    background-image: url('../img/rodape.png');
+    background-position: center;
+}
+
+#redesR li{
+    width: 40px;
+    height: 40px; 
+    margin: 5px 0.4rem 0px; 
+    display: inline-block;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.icon-faceook{ background-image: url('../img/face-b.png'); transition: 0.5s; background-size: 100% 100%; }
+.icon-faceook:hover{ background-image: url('../img/face-a.png'); }
+
+.icon-twitter{ background-image: url('../img/twi-b.png'); transition: 0.5s; background-size: 100% 100%;}
+.icon-twitter:hover{ background-image: url('../img/twi-a.png'); }
+
+.icon-instagram{ background-image: url('../img/insta-b.png'); transition: 0.5s; background-size: 100% 100%;}
+.icon-instagram:hover{ background-image: url('../img/insta-a.png'); }
+
+@media only screen and (min-width: 0px) {
+	#redes li{ padding: 1.5rem; }
+	.botaoVerde{
+		max-width: 70%;
+		min-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#redes li{ padding: 2rem; }
+}
+
+@media only screen and (min-width: 900px) {
+	#redes li{ padding: 3rem; }
+}
